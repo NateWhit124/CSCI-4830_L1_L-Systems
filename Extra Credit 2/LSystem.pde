@@ -114,12 +114,6 @@ class LSystem extends BaseLSystem {
           t.penDown();
         break;
         
-        case 'Q': // bottom left offset
-          t.penUp();
-          t.goToPoint(0,height);
-          t.penDown();
-        break;
-        
         case 'A':
         // ignore A; for use with the Hilbert curve
         break;

@@ -38,8 +38,8 @@ void setup() {
   
   //lSys = initSquare();
   //lSys = initCustom1();
-  //lSys = initCustom2();
-  lSys = initCustom3();
+  lSys = initCustom2();
+  //lSys = initCustom3();
   
   // Don't loop the draw function
   noLoop();

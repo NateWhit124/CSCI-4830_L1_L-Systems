@@ -48,15 +48,16 @@ LSystem initCustom1() {
 LSystem initCustom2() {
   // initialize turtle variables
   float moveDist = 50;
-  float rotateAngle = 20;
-  float scaleFactor = 0.5;
+  float rotateAngle = 120;
+  float scaleFactor = 1;
   
   // The intial axiom / input string
-  String axiom = "OF";
+  String axiom = "OF-G-G";
   
   // Create any production rules
   HashMap<Character, String> rules = new HashMap<>();
-  rules.put('F',"F[+F-F++FL][-F+F--FL]F");
+  rules.put('F',"F-G+F+G-F");
+  rules.put('G',"GG");
     
   // Create and return the Lsystem
   return new LSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
@@ -64,17 +65,17 @@ LSystem initCustom2() {
 
 LSystem initCustom3() {
   // initialize turtle variables
-  float moveDist = 50;
-  float rotateAngle = 88;
-  float scaleFactor = 0.5;
+  float moveDist = 5;
+  float rotateAngle = 45;
+  float scaleFactor = 0.07;
   
   // The intial axiom / input string
-  String axiom = "F+F+F+F";
+  //String axiom = "F[+F]F[-F]";
+  String axiom = "OF[+FL]F[-FL][F]";
   
   // Create any production rules
   HashMap<Character, String> rules = new HashMap<>();
-  rules.put('F',"F[+F-G++F][-F+G--F]F");
-  rules.put('G',"F[-G+F--G]");
+  rules.put('F', "F[+FL]F[-FL][F]");
     
   // Create and return the Lsystem
   return new LSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);

@@ -35,11 +35,8 @@ void setup() {
   // a method in ExampleLSystemDesigns
   // [##############TODO##############]: call your L-system design method below
   // to create your l-system
-  
-  //lSys = initSquare();
-  //lSys = initCustom1();
-  lSys = initCustom2();
-  //lSys = initCustom3();
+
+  lSys = initCustom();
   
   // Don't loop the draw function
   noLoop();

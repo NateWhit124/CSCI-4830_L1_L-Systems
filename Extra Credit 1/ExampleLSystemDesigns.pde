@@ -7,10 +7,10 @@ import java.util.HashMap;
 // and use/test in the setup() method of L1LSystemAssignment file. 
 // See example for Square Lsystem below.
 
-// Square Lsystem initialization 
+// Square _ProbabilisticLSystem initialization 
 // This method returns an Lsystem object that uses
 // The rules and axioms for a square based system
-LSystem initSquare() {
+_ProbabilisticLSystem initSquare() {
   // initialize turtle variables
   float moveDist = 10;
   float rotateAngle = 90;
@@ -24,10 +24,10 @@ LSystem initSquare() {
   rules.put('F', "F+F-F-FF+F+F-F");
     
   // Create and return the Lsystem
-  return new LSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
+  return new _ProbabilisticLSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
 }
 
-LSystem initCustom1() {
+_ProbabilisticLSystem initCustom1() {
   // initialize turtle variables
   float moveDist = 5;
   float rotateAngle = 45;
@@ -42,10 +42,10 @@ LSystem initCustom1() {
   rules.put('F', "F[+FL]F[-FL][F]");
     
   // Create and return the Lsystem
-  return new LSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
+  return new _ProbabilisticLSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
 }
 
-LSystem initCustom2() {
+_ProbabilisticLSystem initCustom2() {
   // initialize turtle variables
   float moveDist = 50;
   float rotateAngle = 120;
@@ -60,10 +60,10 @@ LSystem initCustom2() {
   rules.put('G',"GG");
     
   // Create and return the Lsystem
-  return new LSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
+  return new _ProbabilisticLSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
 }
 
-LSystem initCustom3() {
+_ProbabilisticLSystem initCustom3() {
   // initialize turtle variables
   float moveDist = 5;
   float rotateAngle = 45;
@@ -78,5 +78,5 @@ LSystem initCustom3() {
   rules.put('F', "F[+FL]F[-FL][F]");
     
   // Create and return the Lsystem
-  return new LSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
+  return new _ProbabilisticLSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
 }

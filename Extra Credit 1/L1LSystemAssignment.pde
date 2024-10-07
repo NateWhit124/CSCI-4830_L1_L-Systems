@@ -37,8 +37,8 @@ void setup() {
   // to create your l-system
   
   //lSys = initSquare();
-  lSys = initCustom1();
-  //lSys = initCustom2();
+  //lSys = initCustom1();
+  lSys = initCustom2();
   //lSys = initCustom3();
   
   // Don't loop the draw function

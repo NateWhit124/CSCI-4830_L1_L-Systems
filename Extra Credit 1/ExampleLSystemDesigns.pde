@@ -48,16 +48,15 @@ _ProbabilisticLSystem initCustom1() {
 _ProbabilisticLSystem initCustom2() {
   // initialize turtle variables
   float moveDist = 50;
-  float rotateAngle = 120;
-  float scaleFactor = 1;
+  float rotateAngle = 20;
+  float scaleFactor = 0.5;
   
   // The intial axiom / input string
-  String axiom = "OF-G-G";
+  String axiom = "OF";
   
   // Create any production rules
   HashMap<Character, String> rules = new HashMap<>();
-  rules.put('F',"F-G+F+G-F");
-  rules.put('G',"GG");
+  rules.put('F',"F[+F-F++FL][-F+F--FL]F");
     
   // Create and return the Lsystem
   return new _ProbabilisticLSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);
@@ -65,17 +64,17 @@ _ProbabilisticLSystem initCustom2() {
 
 _ProbabilisticLSystem initCustom3() {
   // initialize turtle variables
-  float moveDist = 5;
-  float rotateAngle = 45;
-  float scaleFactor = 0.07;
+  float moveDist = 50;
+  float rotateAngle = 88;
+  float scaleFactor = 0.7;
   
   // The intial axiom / input string
-  //String axiom = "F[+F]F[-F]";
-  String axiom = "OF[+FL]F[-FL][F]";
+  String axiom = "F+F+F+F";
   
   // Create any production rules
   HashMap<Character, String> rules = new HashMap<>();
-  rules.put('F', "F[+FL]F[-FL][F]");
+  rules.put('F',"F[+F-G++F][-F+G--F]F");
+  rules.put('G',"F[-G+F--G]");
     
   // Create and return the Lsystem
   return new _ProbabilisticLSystem(axiom, rules, moveDist, rotateAngle, scaleFactor);

@@ -66,7 +66,7 @@ LSystem initCustom3() {
   // initialize turtle variables
   float moveDist = 50;
   float rotateAngle = 88;
-  float scaleFactor = 0.5;
+  float scaleFactor = 0.7;
   
   // The intial axiom / input string
   String axiom = "F+F+F+F";
